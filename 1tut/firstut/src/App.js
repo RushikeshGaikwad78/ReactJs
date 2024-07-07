@@ -3,11 +3,13 @@ import React ,{Component} from 'react';
 import './App.css';
 import {Greet} from './greet'
 import Welcome from './welcome';
+import Hello from './jsxtut';
 function App() {
   return (
     <div className="App">
-      <Greet/>
-      <Welcome/>
+      {/* <Greet/>
+      <Welcome/> */}
+      <Hello/>
     </div>
   );
 }
