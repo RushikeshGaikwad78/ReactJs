@@ -7,10 +7,13 @@ import Counter from "./components/Counter";
 import Functionalclick from "./components/Functionalclick";
 import Classclick from "./components/Classclick";
 import Eventbind from "./components/Eventbind";
+import Parentcomponenet from "./components/Parentcomponenet";
 function App() {
   return (
     <div className="App">
-      <Eventbind/>
+      <Parentcomponenet/>    passing method as props & attributes to it from child to parent component
+
+      {/* <Eventbind/>             all eventhandlers binding methods */}
 
       {/* <Functionalclick/>   onclick eventhandler in functional component */}
       {/* <Classclick/>      onclick eventhandler in class component */}
