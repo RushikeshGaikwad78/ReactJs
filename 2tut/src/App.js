@@ -8,10 +8,13 @@ import Functionalclick from "./components/Functionalclick";
 import Classclick from "./components/Classclick";
 import Eventbind from "./components/Eventbind";
 import Parentcomponenet from "./components/Parentcomponenet";
+import UserGreeting from "./components/UserGreeting";
 function App() {
   return (
     <div className="App">
-      <Parentcomponenet/>    passing method as props & attributes to it from child to parent component
+      <UserGreeting/>     4 types of rendering 
+
+      {/* <Parentcomponenet/>    passing method as props & attributes to it from child to parent component */}
 
       {/* <Eventbind/>             all eventhandlers binding methods */}
 
