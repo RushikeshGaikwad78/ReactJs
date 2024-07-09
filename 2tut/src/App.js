@@ -4,12 +4,18 @@ import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
+import Functionalclick from "./components/Functionalclick";
+import Classclick from "./components/Classclick";
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      {/* <Functionalclick/>   onclick eventhandler in functional component */}
+      <Classclick/>      {/*onclick eventhandler in class component */}
 
-      {/* <Greet name="Rushi" class="10"> */}
+
+      {/* <Counter/> */}    {/* about states*/}
+
+      {/* <Greet name="Rushi" classname="10"> */}  {/*functional component and props in it*/}
         {/* {" "} */}
         {/* passing props */}
         {/* <button>Rushi</button> */}
@@ -17,9 +23,9 @@ function App() {
       {/* <Greet name="pusyy" class="12"> */}
         {/* <button>pussy</button> */}
       {/* </Greet> */}
-{/* 
-      <Welcome name="Rushi" class="10"/>
-      <Welcome name="pusyy" class="12"/> */}
+
+      {/* <Welcome name="Rushi" classname="10"/>   {/*class component and props in it}
+      <Welcome name="pusyy" classname="12"/> */}
 
       {/* state */}
       {/* <Message/> */}
