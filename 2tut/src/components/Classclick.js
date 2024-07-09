@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class Classclick extends Component {
     clickhandler() {
         console.log("class comp clicked!!!");
+        console.log(this)
     }
   render() {
    

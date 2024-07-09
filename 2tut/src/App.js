@@ -6,11 +6,14 @@ import Message from "./components/Message";
 import Counter from "./components/Counter";
 import Functionalclick from "./components/Functionalclick";
 import Classclick from "./components/Classclick";
+import Eventbind from "./components/Eventbind";
 function App() {
   return (
     <div className="App">
+      <Eventbind/>
+
       {/* <Functionalclick/>   onclick eventhandler in functional component */}
-      <Classclick/>      {/*onclick eventhandler in class component */}
+      {/* <Classclick/>      onclick eventhandler in class component */}
 
 
       {/* <Counter/> */}    {/* about states*/}
