@@ -9,10 +9,14 @@ import Classclick from "./components/Classclick";
 import Eventbind from "./components/Eventbind";
 import Parentcomponenet from "./components/Parentcomponenet";
 import UserGreeting from "./components/UserGreeting";
+import NameList from "./components/NameList";
 function App() {
   return (
     <div className="App">
-      <UserGreeting/>     4 types of rendering 
+
+      <NameList/>
+
+      {/* <UserGreeting/>     4 types of rendering  */}
 
       {/* <Parentcomponenet/>    passing method as props & attributes to it from child to parent component */}
 
