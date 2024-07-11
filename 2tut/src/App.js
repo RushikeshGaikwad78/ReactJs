@@ -10,13 +10,14 @@ import Eventbind from "./components/Eventbind";
 import Parentcomponenet from "./components/Parentcomponenet";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import Stylesheet from "./components/Stylesheet";
 function App() {
   return (
     <div className="App">
 
-      
+      <Stylesheet primary={true}/>
 
-      <NameList/>      List Rendering
+      {/* <NameList/>      List Rendering , Keys , Index as a Key */}
 
       {/* <UserGreeting/>     4 types of rendering  */}
 
