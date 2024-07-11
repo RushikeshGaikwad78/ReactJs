@@ -14,7 +14,9 @@ function App() {
   return (
     <div className="App">
 
-      <NameList/>
+      
+
+      <NameList/>      List Rendering
 
       {/* <UserGreeting/>     4 types of rendering  */}
 
