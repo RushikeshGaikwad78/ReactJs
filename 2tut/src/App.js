@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
 
-      <Stylesheet primary={true}/>
+      <Stylesheet primary={true}/>  Applying CSS using Stylesheets
 
       {/* <NameList/>      List Rendering , Keys , Index as a Key */}
 
