@@ -11,11 +11,14 @@ import Parentcomponenet from "./components/Parentcomponenet";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheet from "./components/Stylesheet";
+import Inline from "./components/Inline";
 function App() {
   return (
     <div className="App">
 
-      <Stylesheet primary={true}/>  Applying CSS using Stylesheets
+      <Inline/>
+
+      {/* <Stylesheet primary={true}/>  Applying CSS using Stylesheets */}
 
       {/* <NameList/>      List Rendering , Keys , Index as a Key */}
 
