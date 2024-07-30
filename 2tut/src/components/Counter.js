@@ -2,7 +2,8 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
-  constructor(props) {         //rconst
+  constructor(props) {
+    //rconst
     super(props);
 
     this.state = {
@@ -20,7 +21,8 @@ class Counter extends Component {
         {
           count: prevState.count + 1,
         },
-        () => {  //callback
+        () => {
+          //callback
           //code which need to be handled whenever set has been changed
         }
       )
@@ -31,7 +33,7 @@ class Counter extends Component {
     return (
       <div>
         {this.state.count}
-        <button onClick={() => this.handleChange()}>Increment</button>
+        <button onClick={() => this.handleChange}>Increment</button>
       </div>
     );
   }
