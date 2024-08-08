@@ -17,6 +17,8 @@ function App() {
   return (
     <div className="App">
 
+      
+
       {/*whenever a componenet in react is created it goes through lifecycle methods.we can override this lifecycle
       methods.
             in class componenet ;-
