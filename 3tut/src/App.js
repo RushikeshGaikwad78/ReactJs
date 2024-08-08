@@ -10,9 +10,11 @@ import Parentcomp from './components/Parentcomp';
 function App() {
   return (
     <div>
-      <Parentcomp/>  {/* Pure component */}
+      {/* <Parentcomp/>  Pure component    */}
       {/* regular component :- do not implement shouldComponentUpdate method and return true by default
-      pure component :- implements shouldComponentUpdate with a shallow props and state comparision */}
+      pure component :- implements shouldComponentUpdate with a shallow props and state comparision  
+                        do not do unnecessary renders
+      */}
 
       {/* <LifecycleA/>  mounting lifecycle methods */}
       {/* <Fragmentdemo/> */}
