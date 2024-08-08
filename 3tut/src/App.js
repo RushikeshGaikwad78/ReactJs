@@ -10,6 +10,9 @@ import Parentcomp from './components/Parentcomp';
 function App() {
   return (
     <div>
+      {/* <Parentcomp/> */}
+      {/* memo is same as what pure component is to class component to functional component */}
+
       {/* <Parentcomp/>  Pure component    */}
       {/* regular component :- do not implement shouldComponentUpdate method and return true by default
       pure component :- implements shouldComponentUpdate with a shallow props and state comparision  
