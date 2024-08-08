@@ -9,7 +9,7 @@ function Column() {
 
 
   return (  
-    // <> </>   this is also react fragment only
+    // <> </>   this is also react fragment only  , but cannot pass key as attribute
     <React.Fragment>   
         {
             item.map(item => (
