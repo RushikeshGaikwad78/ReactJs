@@ -8,12 +8,15 @@ import Purecomponenet from './components/Purecomponenet';
 import Parentcomp from './components/Parentcomp';
 import Refsdemo from './components/Refsdemo';
 import Focusinput from './components/Focusinput';
+import FRParentinput from './components/FRParentinput';
 
 function App() {
   return (
     <div>
 
-      <Focusinput/> 
+      <FRParentinput/>
+
+      {/* <Focusinput/>  */}
 
       {/* <Parentcomp/> */}
       {/* memo is same as what pure component is to class component to functional component */}
