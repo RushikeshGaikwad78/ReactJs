@@ -5,7 +5,8 @@ import LifecycleA from './components/lifecycleA';
 function App() {
   return (
     <>
-      <LifecycleA/>
+      <LifecycleA/>  {/* mounting lifecycle methods */}
+      
     </>
   );
 }
