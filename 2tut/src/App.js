@@ -17,7 +17,18 @@ function App() {
   return (
     <div className="App">
 
-      <Form/>  handling forms
+      {/*whenever a componenet in react is created it goes through lifecycle methods.we can override this lifecycle
+      methods.
+            in class componenet ;-
+              mounting :- whenever a instance of component is inserted in DOM
+              updating :- rerenderd due to change in states or props
+              unmounting :- when removed from dom
+              error handling :- error in rendering or error in child component
+            
+            we have some methods for each lifecycle method
+      */}
+
+      {/* <Form/>  handling forms */}
 
       {/* <Inline/> */}
 
