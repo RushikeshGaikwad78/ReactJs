@@ -7,12 +7,13 @@ import React from 'react';
 import Purecomponenet from './components/Purecomponenet';
 import Parentcomp from './components/Parentcomp';
 import Refsdemo from './components/Refsdemo';
+import Focusinput from './components/Focusinput';
 
 function App() {
   return (
     <div>
 
-      <Refsdemo/>
+      <Focusinput/> 
 
       {/* <Parentcomp/> */}
       {/* memo is same as what pure component is to class component to functional component */}
