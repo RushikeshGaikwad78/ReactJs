@@ -6,10 +6,14 @@ import Tables from './components/Tables';
 import React from 'react';
 import Purecomponenet from './components/Purecomponenet';
 import Parentcomp from './components/Parentcomp';
+import Refsdemo from './components/Refsdemo';
 
 function App() {
   return (
     <div>
+
+      <Refsdemo/>
+
       {/* <Parentcomp/> */}
       {/* memo is same as what pure component is to class component to functional component */}
 
