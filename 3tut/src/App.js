@@ -9,14 +9,18 @@ import Parentcomp from './components/Parentcomp';
 import Refsdemo from './components/Refsdemo';
 import Focusinput from './components/Focusinput';
 import FRParentinput from './components/FRParentinput';
+import Portaldemo from './components/Portaldemo';
 
 function App() {
   return (
     <div>
 
-      <FRParentinput/>
+      <Portaldemo/>
+      {/* portals give ability to break out of the DOM tree */}
 
-      {/* <Focusinput/>  */}
+      {/* <FRParentinput/>  forwarding refs */}
+
+      {/* <Focusinput/>  refs*/}
 
       {/* <Parentcomp/> */}
       {/* memo is same as what pure component is to class component to functional component */}
