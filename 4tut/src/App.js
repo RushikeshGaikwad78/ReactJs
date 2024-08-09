@@ -1,5 +1,6 @@
 import "./App.css";
 import HookCounterone from "./Components/useEffect/HookCounterone";
+import HookMouse from "./Components/useEffect/HookMouse";
 import ClassCounter from "./Components/useState/ClassCounter";
 import HookCounter from "./Components/useState/HookCounter";
 import HookCounterFour from "./Components/useState/HookCounterFour";
@@ -9,6 +10,8 @@ import HookCounterTwo from "./Components/useState/HookCounterTwo";
 function App() {
   return (
     <>
+
+      <HookMouse/>
 
       {/* conditonally running the use effect hook */}
       {/* second parameter is sent in array */}
