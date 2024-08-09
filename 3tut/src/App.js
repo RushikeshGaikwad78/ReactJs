@@ -18,7 +18,10 @@ function App() {
   return (
     <div>
 
-      {/* Higher order components : to share common functionality between components */}
+      {/* Higher order components : to share common functionality between components
+                                    A pattern where a function takes a component as an arguement 
+                                    returns a new component
+                                    const newcomponent = higherordercomponent(originalcomponent) */}
       <HOCcounter/>
       <HOChover/>
 
