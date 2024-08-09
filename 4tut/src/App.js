@@ -4,10 +4,19 @@ import HookCounter from './Components/useState/HookCounter';
 import HookCounterFour from './Components/useState/HookCounterFour';
 import HookCounterThree from './Components/useState/HookCounterThree';
 import HookCounterTwo from './Components/useState/HookCounterTwo';
-
+import { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    alert("hellloooo!!!!")
+  }, [])
+  
   return (
     <>
+     
+      {/* USE EFFECT HOOK */}
+      {/* The Effect hook lets you perform side effects in functional components. It is a close replacement 
+          for componentDidMount, componentDidUpdate and componentWillUnmount */}
+      {/* Updating DOM , fetching data from api endpoint, setting up subscriptions or timers */}
 
       {/* <HookCounterFour/>  
       using useState hook in arrays
