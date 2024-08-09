@@ -1,12 +1,18 @@
 import './App.css';
 import ClassCounter from './Components/useState/ClassCounter';
 import HookCounter from './Components/useState/HookCounter';
+import HookCounterFour from './Components/useState/HookCounterFour';
 import HookCounterThree from './Components/useState/HookCounterThree';
 import HookCounterTwo from './Components/useState/HookCounterTwo';
 
 function App() {
   return (
     <>
+
+      {/* <HookCounterFour/>  
+      using useState hook in arrays
+      use of spread operator */}
+
 
       {/* <HookCounterThree/> */}
       {/* using object as state variable with useState hook 
