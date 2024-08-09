@@ -13,8 +13,14 @@ function HookMouse() {
     useEffect(()=>{
         console.log("use effect called");
         window.addEventListener('mousemove' , logMousePosition)
+
+        return () => {     //whenever the component is unmounted this is returned
+            console.log("component unmounting mode")
+            window.removeEventListener('mousemove' , logMousePosition)
+        }
+
     },[])  //if this array is empty then useEffect hook is called only once.... mimicing componentdidmount in class component
-    
+
 
   return (
     <div>

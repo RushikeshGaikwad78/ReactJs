@@ -1,6 +1,7 @@
 import "./App.css";
 import HookCounterone from "./Components/useEffect/HookCounterone";
 import HookMouse from "./Components/useEffect/HookMouse";
+import MouseContainer from "./Components/useEffect/MouseContainer";
 import ClassCounter from "./Components/useState/ClassCounter";
 import HookCounter from "./Components/useState/HookCounter";
 import HookCounterFour from "./Components/useState/HookCounterFour";
@@ -11,7 +12,9 @@ function App() {
   return (
     <>
 
-      <HookMouse/>
+      {/* <MouseContainer/>   mimicing componentWillUnmount in class component */}
+
+      {/* <HookMouse/> running use effect only once ... mimicing componentDidMount in class component*/}
 
       {/* conditonally running the use effect hook */}
       {/* second parameter is sent in array */}
@@ -40,7 +43,7 @@ function App() {
         1.only call hooks at the top level
         2.dont call hooks inside loops,conditions or nested functions
         3.only call hooks from react functions */}
-    </>
+      </>
   );
 }
 
