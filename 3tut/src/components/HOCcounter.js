@@ -13,4 +13,4 @@ class HOCcounter extends Component {
   }
 }
 
-export default HOCwithcounter(HOCcounter)
+export default HOCwithcounter(HOCcounter,5)

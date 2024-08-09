@@ -1,6 +1,6 @@
 import React from "react";
 //updated component       original component
-const HOCwithcounter = (WrappedComponent) => {
+const HOCwithcounter = (WrappedComponent,incrementnumber) => {
   class NewComponent extends React.Component {
     constructor(props) {
       super(props);
@@ -12,11 +12,11 @@ const HOCwithcounter = (WrappedComponent) => {
 
     incrementCount = () => {
       this.setState((prevState) => {
-        return { count: prevState.count + 1 };
+        return { count: prevState.count + incrementnumber };
       });
     };
     render() {
-      return <WrappedComponent count={this.state.count} incrementCount={this.incrementCount}/>;
+      return <WrappedComponent count={this.state.count} incrementCount={this.incrementCount}  {...this.props}/>;
     }
   }
   return NewComponent;
