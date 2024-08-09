@@ -9,7 +9,12 @@ import HookCounterTwo from "./Components/useState/HookCounterTwo";
 function App() {
   return (
     <>
-      <HookCounterone />  
+
+      {/* conditonally running the use effect hook */}
+      {/* second parameter is sent in array */}
+      {/* <HookCounterone/> */}
+
+      {/* <HookCounterone />   implementation of use effect hook   */}
 
       {/* USE EFFECT HOOK */}
       {/* The Effect hook lets you perform side effects in functional components. It is a close replacement 
