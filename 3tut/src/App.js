@@ -20,12 +20,13 @@ import Renderpropcounter from "./components/Renderpropcounter";
 import ComponentC from "./components/Context/ComponentC";
 import { UserProvider } from "./components/Context/Usercontext";
 import PostList from "./components/HTTP/PostList";
+import PostForm from "./components/HTTP/PostForm";
 
 function App() {
   return (
     <div>
 
-
+    <PostForm/>
 
       {/* <PostList/>   HTTP GET REQUEST */}
 
