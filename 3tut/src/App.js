@@ -13,17 +13,39 @@ import ErrorHero from "./components/ErrorHero";
 import Errorboundary from "./components/Errorboundary";
 import HOCcounter from "./components/HOCcounter";
 import HOChover from "./components/HOChover";
+import Renderpropclick from "./components/Renderpropclick";
+import Renderprophover from "./components/Renderprophover";
+import Renderpropuser from "./components/Renderpropuser";
+import Renderpropcounter from "./components/Renderpropcounter";
 
 function App() {
   return (
     <div>
+      {/* Render Props :- sharing functionalities between components  
+                          refers to a technique for sharing code between react components using a 
+                          prop whose value is a function */}
+      {/* <Renderpropclick />
+      <Renderprophover />
+      <Renderpropuser render={(isLoggedIN) => isLoggedIN ? "Rushi" : "Guest"} /> */}
+      <Renderpropcounter
+        render={(count, incrementcount) => (
+          <Renderpropclick count={count} incrementcount={incrementcount} />
+        )}
+      />
+      
+      <Renderpropcounter
+      render = {(count,incrementcount) => (
+        <Renderprophover count={count} incrementcount={incrementcount}/>
+      )}/>
+
+
 
       {/* Higher order components : to share common functionality between components
                                     A pattern where a function takes a component as an arguement 
                                     returns a new component
                                     const newcomponent = higherordercomponent(originalcomponent) */}
-      <HOCcounter/>
-      <HOChover/>
+      {/* <HOCcounter/>
+      <HOChover/> */}
 
       {/* error boundaries are react components that catch js error in their child component tree,log
       those errors ,and display a faalback UI */}
