@@ -17,17 +17,29 @@ import Renderpropclick from "./components/Renderpropclick";
 import Renderprophover from "./components/Renderprophover";
 import Renderpropuser from "./components/Renderpropuser";
 import Renderpropcounter from "./components/Renderpropcounter";
+import ComponentC from "./components/Context/ComponentC";
+import { UserProvider } from "./components/Context/Usercontext";
 
 function App() {
   return (
     <div>
+      {/* Context : - provides a way to pass data through the component tree without having to pass props down 
+                      manually at every level. */}
+      {/* three steps :- 1.create the context, 2.Provide a context value , 3.Consume the context value */}
+
+      {/* step 2 */}
+      <UserProvider value="Rushi">
+        <ComponentC />  
+      </UserProvider>
+       
+
       {/* Render Props :- sharing functionalities between components  
                           refers to a technique for sharing code between react components using a 
                           prop whose value is a function */}
       {/* <Renderpropclick />
       <Renderprophover />
       <Renderpropuser render={(isLoggedIN) => isLoggedIN ? "Rushi" : "Guest"} /> */}
-      <Renderpropcounter
+      {/* <Renderpropcounter
         render={(count, incrementcount) => (
           <Renderpropclick count={count} incrementcount={incrementcount} />
         )}
@@ -36,9 +48,7 @@ function App() {
       <Renderpropcounter
       render = {(count,incrementcount) => (
         <Renderprophover count={count} incrementcount={incrementcount}/>
-      )}/>
-
-
+      )}/> */}
 
       {/* Higher order components : to share common functionality between components
                                     A pattern where a function takes a component as an arguement 
