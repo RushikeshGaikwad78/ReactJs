@@ -19,17 +19,21 @@ import Renderpropuser from "./components/Renderpropuser";
 import Renderpropcounter from "./components/Renderpropcounter";
 import ComponentC from "./components/Context/ComponentC";
 import { UserProvider } from "./components/Context/Usercontext";
+import PostList from "./components/HTTP/PostList";
 
 function App() {
   return (
     <div>
+
+      <PostList/> 
+
       {/* Context : - provides a way to pass data through the component tree without having to pass props down 
                       manually at every level. */}
       {/* three steps :- 1.create the context, 2.Provide a context value , 3.Consume the context value */}
 
       {/* step 2 */}
       {/* <UserProvider value="Rushi"> */}
-        <ComponentC />  
+        {/* <ComponentC />   */}
       {/* </UserProvider> */}
        
 
