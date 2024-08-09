@@ -1,21 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-import LifecycleA from './components/lifecycleA';
-import Fragmentdemo from './components/Fragmentdemo';
-import Tables from './components/Tables';
-import React from 'react';
-import Purecomponenet from './components/Purecomponenet';
-import Parentcomp from './components/Parentcomp';
-import Refsdemo from './components/Refsdemo';
-import Focusinput from './components/Focusinput';
-import FRParentinput from './components/FRParentinput';
-import Portaldemo from './components/Portaldemo';
+import logo from "./logo.svg";
+import LifecycleA from "./components/lifecycleA";
+import Fragmentdemo from "./components/Fragmentdemo";
+import Tables from "./components/Tables";
+import React from "react";
+import Purecomponenet from "./components/Purecomponenet";
+import Parentcomp from "./components/Parentcomp";
+import Refsdemo from "./components/Refsdemo";
+import Focusinput from "./components/Focusinput";
+import FRParentinput from "./components/FRParentinput";
+import Portaldemo from "./components/Portaldemo";
+import ErrorHero from "./components/ErrorHero";
+import Errorboundary from "./components/Errorboundary";
 
 function App() {
   return (
     <div>
 
-      <Portaldemo/>
+      {/* error boundaries are react components that catch js error in their child component tree,log
+      those errors ,and display a faalback UI */}
+      <Errorboundary>
+        <ErrorHero heroName={"Batman"} />
+      </Errorboundary>
+
+      <Errorboundary>
+        <ErrorHero heroName={"JOKER"} />
+      </Errorboundary>
+
+      {/* <Portaldemo/>*/}
       {/* portals give ability to break out of the DOM tree */}
 
       {/* <FRParentinput/>  forwarding refs */}
