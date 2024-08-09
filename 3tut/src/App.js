@@ -11,20 +11,26 @@ import FRParentinput from "./components/FRParentinput";
 import Portaldemo from "./components/Portaldemo";
 import ErrorHero from "./components/ErrorHero";
 import Errorboundary from "./components/Errorboundary";
+import HOCcounter from "./components/HOCcounter";
+import HOChover from "./components/HOChover";
 
 function App() {
   return (
     <div>
 
+      {/* Higher order components : to share common functionality between components */}
+      <HOCcounter/>
+      <HOChover/>
+
       {/* error boundaries are react components that catch js error in their child component tree,log
       those errors ,and display a faalback UI */}
-      <Errorboundary>
+      {/* <Errorboundary>
         <ErrorHero heroName={"Batman"} />
       </Errorboundary>
 
       <Errorboundary>
         <ErrorHero heroName={"JOKER"} />
-      </Errorboundary>
+      </Errorboundary> */}
 
       {/* <Portaldemo/>*/}
       {/* portals give ability to break out of the DOM tree */}
