@@ -28,9 +28,9 @@ function App() {
       {/* three steps :- 1.create the context, 2.Provide a context value , 3.Consume the context value */}
 
       {/* step 2 */}
-      <UserProvider value="Rushi">
+      {/* <UserProvider value="Rushi"> */}
         <ComponentC />  
-      </UserProvider>
+      {/* </UserProvider> */}
        
 
       {/* Render Props :- sharing functionalities between components  
