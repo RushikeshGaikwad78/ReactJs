@@ -1,11 +1,17 @@
 import './App.css';
 import ClassCounter from './Components/useState/ClassCounter';
 import HookCounter from './Components/useState/HookCounter';
+import HookCounterThree from './Components/useState/HookCounterThree';
 import HookCounterTwo from './Components/useState/HookCounterTwo';
 
 function App() {
   return (
     <>
+
+      {/* <HookCounterThree/> */}
+      {/* using object as state variable with useState hook 
+          use of spread operator to save the previous state of an object*/}
+
       {/* <HookCounterTwo/>   Updating hook based on the previous value of the state */}
 
 
