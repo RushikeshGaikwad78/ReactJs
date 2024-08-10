@@ -1,6 +1,7 @@
 import "./App.css";
 import HookCounterone from "./Components/useEffect/HookCounterone";
 import HookMouse from "./Components/useEffect/HookMouse";
+import IntervalHookCounter from "./Components/useEffect/IntervalHookCounter";
 import MouseContainer from "./Components/useEffect/MouseContainer";
 import ClassCounter from "./Components/useState/ClassCounter";
 import HookCounter from "./Components/useState/HookCounter";
@@ -11,6 +12,8 @@ import HookCounterTwo from "./Components/useState/HookCounterTwo";
 function App() {
   return (
     <>
+
+      {/* <IntervalHookCounter/>  multiple use effects , function within use effect, preserving previous state and using it */}
 
       {/* <MouseContainer/>   mimicing componentWillUnmount in class component */}
 
