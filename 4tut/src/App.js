@@ -1,4 +1,5 @@
 import "./App.css";
+import DataFetching from "./Components/useEffect/DataFetching";
 import HookCounterone from "./Components/useEffect/HookCounterone";
 import HookMouse from "./Components/useEffect/HookMouse";
 import IntervalHookCounter from "./Components/useEffect/IntervalHookCounter";
@@ -12,6 +13,8 @@ import HookCounterTwo from "./Components/useState/HookCounterTwo";
 function App() {
   return (
     <>
+      {/* fetching data from end point */}
+      <DataFetching/>
 
       {/* <IntervalHookCounter/>  multiple use effects , function within use effect, preserving previous state and using it */}
 
