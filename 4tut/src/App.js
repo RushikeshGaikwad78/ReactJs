@@ -1,4 +1,6 @@
 import "./App.css";
+import React from "react";
+import ComponentA from "./Components/useContext/ComponentA";
 import DataFetching from "./Components/useEffect/DataFetching";
 import HookCounterone from "./Components/useEffect/HookCounterone";
 import HookMouse from "./Components/useEffect/HookMouse";
@@ -10,11 +12,27 @@ import HookCounterFour from "./Components/useState/HookCounterFour";
 import HookCounterThree from "./Components/useState/HookCounterThree";
 import HookCounterTwo from "./Components/useState/HookCounterTwo";
 
+//step 1 creation of context
+export const userContext = React.createContext();
+export const ChannelContext = React.createContext();
+
 function App() {
   return (
     <>
+      {/* step 2 : -  providing a context*/}
+      <userContext.Provider value={"Rushiiiii"}>
+        <ChannelContext.Provider value={"Codevolution"}>
+          <ComponentA />
+        </ChannelContext.Provider>
+      </userContext.Provider>
+      {/* CONTEXT :- context provides a way to pass data through the component tree without having to pass props down
+          manually at every level */}
+
+      {/* fetching individual post by passing post id */}
+      {/* <DataFetching/> */}
+
       {/* fetching data from end point */}
-      <DataFetching/>
+      {/* <DataFetching/> */}
 
       {/* <IntervalHookCounter/>  multiple use effects , function within use effect, preserving previous state and using it */}
 
@@ -49,7 +67,7 @@ function App() {
         1.only call hooks at the top level
         2.dont call hooks inside loops,conditions or nested functions
         3.only call hooks from react functions */}
-      </>
+    </>
   );
 }
 
