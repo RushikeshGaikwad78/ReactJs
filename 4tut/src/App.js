@@ -19,12 +19,20 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <>
+
+      {/* USE REDUCER :-  it is a hook used for the state management
+                          it is an alternative to useState
+                          useState is built using useReducer
+                          useReducer(reducer,initalState)
+                          newState = reducer(currentState,action)
+                          useReducer returns a pair of values. [newState,dispatch]  */}
+
       {/* step 2 : -  providing a context*/}
-      <userContext.Provider value={"Rushiiiii"}>
+      {/* <userContext.Provider value={"Rushiiiii"}>
         <ChannelContext.Provider value={"Codevolution"}>
           <ComponentA />
         </ChannelContext.Provider>
-      </userContext.Provider>
+      </userContext.Provider> */}
       {/* CONTEXT :- context provides a way to pass data through the component tree without having to pass props down
           manually at every level */}
 
