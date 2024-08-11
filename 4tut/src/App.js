@@ -11,6 +11,7 @@ import HookCounter from "./Components/useState/HookCounter";
 import HookCounterFour from "./Components/useState/HookCounterFour";
 import HookCounterThree from "./Components/useState/HookCounterThree";
 import HookCounterTwo from "./Components/useState/HookCounterTwo";
+import Counter1 from "./Components/useReducer/Counter1";
 
 //step 1 creation of context
 export const userContext = React.createContext();
@@ -19,6 +20,8 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <>
+
+      <Counter1/>
 
       {/* USE REDUCER :-  it is a hook used for the state management
                           it is an alternative to useState
