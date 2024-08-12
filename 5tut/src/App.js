@@ -3,6 +3,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import OrderSummary from "./Components/OrderSummary";
+import NoMatch from "./Components/NoMatch";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/order-summary" element={<OrderSummary/>}/>
+        <Route path="*" element={<NoMatch/>}/>                  {/* No match Route */}
       </Routes>
     </>
   );
