@@ -27,8 +27,9 @@ function App() {
           <Route path="new" element={<New />} />
         </Route>
         <Route path="*" element={<NoMatch />} /> {/* No match Route */}
-        <Route path="users" element={<Users/>}>
-          <Route path=":userid" element={<UserDetails/>}/>
+    
+        <Route path="users" element={<Users/>}>          {/* Dynamic routes */}
+          <Route path=":userId" element={<UserDetails/>}/>
           <Route path="admin" element={<Admin/>}/>
         </Route>
       </Routes>

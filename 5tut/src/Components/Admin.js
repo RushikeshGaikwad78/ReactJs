@@ -1,13 +1,7 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React from "react";
 
 function Admin() {
-  return (
-    <div>Admin User
-        <Outlet/>
-    </div>
-
-  )
+  return <div>Admin User</div>;
 }
 
-export default Admin
+export default Admin;
