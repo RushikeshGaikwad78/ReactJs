@@ -7,6 +7,9 @@ import NoMatch from "./Components/NoMatch";
 import Products from "./Components/Products";
 import Featured from "./Components/Featured";
 import New from "./Components/New";
+import Users from "./Components/Users";
+import UserDetails from "./Components/UserDetails";
+import Admin from "./Components/Admin";
 
 function App() {
   return (
@@ -24,6 +27,10 @@ function App() {
           <Route path="new" element={<New />} />
         </Route>
         <Route path="*" element={<NoMatch />} /> {/* No match Route */}
+        <Route path="users" element={<Users/>}>
+          <Route path=":userid" element={<UserDetails/>}/>
+          <Route path="admin" element={<Admin/>}/>
+        </Route>
       </Routes>
     </>
   );
