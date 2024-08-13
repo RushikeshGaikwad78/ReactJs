@@ -6,7 +6,7 @@ function OrderSummary() {
   return (
     <>
       <div>Order Confirmed</div>
-      <button onClick={()=>navigate(-1)}>Go back</button>
+      <button onClick={()=>navigate('/')}>Go back</button>
     </>
   );
 }
